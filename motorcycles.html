@@ -1,0 +1,182 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycles Page</title>
+    <link rel="stylesheet" href="./styles/motorcycles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <nav></nav>
+    <div id="container">
+        <div id="filter-container">
+            <p class="grey">Home / Bikes</p>
+            <h1 id="lc">Used Bikes in India</h1>
+            <!-- <div class="hr"></div> -->
+            <div>
+                <div>
+                    <h3 class="fil">LOCATION</h3>
+                </div>
+                <div class="opt border" id="location">
+                    <p>Mumbai</p>
+                    <p>Pune</p>
+                    <p>Bengalore</p>
+                    <p>Bhopal</p>
+                    <p>Indore</p>
+                    <p>Delhi</p>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div>
+                <div>
+                    <h3 class="fil">BRAND</h3>
+                </div>
+                <div class="opt border" id="brand">
+                    <p>Bajaj</p>
+                    <p>Royal Enfield</p>
+                    <p>Hero</p>
+                    <p>Yamaha</p>
+                    <p>Honda</p>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div>
+                <div>
+                    <h3 class="fil">BUDGET</h3>
+                    <p class="grey">Choose from options below</p>
+                </div>
+                <div class="opt border" id="budget">
+                    <p>Below 30000 Rs</p>
+                    <p>30000 - 45000 Rs</p>
+                    <p>45000 - 60000 Rs</p>
+                    <p>60000 - 75000 Rs</p>
+                    <p>75000 - 90000 Rs</p>
+                    <p>90000 Rs and above</p>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div>
+                <div>
+                    <h3 class="fil">KM DRIVEN</h3>
+                    <p class="grey">Choose from options below(km)</p>
+                </div>
+                <div class="opt border" id="kilometer">
+                    <p>Below 10000km</p>
+                    <p>10000 - 20000km</p>
+                    <p>20000 - 30000km</p>
+                    <p>30000 - 40000km</p>
+                    <p>40000km and above</p>
+                </div>
+            </div>
+            <!-- <div class="hr"></div> -->
+        </div>
+        <div id="products-container">
+            <div id="sort-container">
+                <label for="sort" class="srt">SORT BY:</label>
+                <select name="sort" id="sort">
+                    <option value="relevance">Relevance</option>
+                    <option value="lth">Price:low to high</option>
+                    <option value="htl">Price:high to low</option>
+                </select>
+            </div>
+            <div class="hr"></div>
+            <div id="products">
+
+            </div>
+        </div>
+    </div>
+    <button id="btn-load">Load More</button>
+    <button id="btnback"><i class="fas fa-angle-up"></i>Back to top</button>
+    <footer id="footer">
+        <div>
+            <div id="footer1">
+                <div id="sections">
+                    <div>
+                        <h4>POPULAR LOCATIONS</h4>
+                        <ul class="grey">
+                            <li><a href="">Bengalore</a></li>
+                            <li><a href="">Mumbai</a></li>
+                            <li><a href="">Delhi</a></li>
+                            <li><a href="">Indore</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>TRENDING LOCATIONS</h4>
+                        <ul class="grey">
+                            <li><a href="">Bhubaneshwar</a></li>
+                            <li><a href="">Hyderabad</a></li>
+                            <li><a href="">Chandigarh</a></li>
+                            <li><a href="">Nashik</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>ABOUT US</h4>
+                        <ul class="grey">
+                            <li><a href="">About OLX Group</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">OLXPeople</a></li>
+                            <li><a href="">Waah Jobs</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>OLX</h4>
+                        <ul class="grey">
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Sitemap</a>
+                            </li>
+                            <li><a href="">Legal
+                                    Privacy information</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div><span>
+                            <h4>Follow Us</h4>
+                        </span>
+                        <div>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div><a href="">
+                                <img src="https://statics.olx.in/external/base/img/playstore.png"
+                                    alt="Android Play Store">
+                            </a><a href="">
+                                <img src="https://statics.olx.in/external/base/img/appstore.png" alt="Apple App Store">
+                            </a></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="footer2">
+            <div>
+                <div><span>Other Countries</span> Pakistan - South Africa - Indonesia</div>
+                <div><span>Free Classifieds in India</span>. © 2006-2022 OLX</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script type="module" src="./scripts/motorcycles.js"></script>
+
+<script type="module">
+    import navbar from "./components/navbar.js";
+    document.querySelector("nav").innerHTML = navbar();
+
+
+</script>
+<script src="./scripts/script.js" type="module"></script>

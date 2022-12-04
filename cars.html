@@ -1,0 +1,185 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Page</title>
+    <link rel="stylesheet" href="./styles/cars.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <nav></nav>
+    <div id="container">
+        <div id="filter-container">
+            <p class="grey">Home / cars</p>
+            <h1 id="lc">Used Cars in India</h1>
+            <!-- <div class="hr"></div> -->
+            <div>
+                <div>
+                    <h3 class="fil">LOCATION</h3>
+                </div>
+                <div class="opt border" id="location">
+                    <p>Mumbai</p>
+                    <p>Pune</p>
+                    <p>Bengalore</p>
+                    <p>Bhopal</p>
+                    <p>Indore</p>
+                    <p>Delhi</p>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div>
+                <div>
+                    <h3 class="fil">BRAND</h3>
+                </div>
+                <div class="opt border" id="brand">
+                    <p>Maruti Suzuki</p>
+                    <p>Tata</p>
+                    <p>Hyundai</p>
+                    <p>Honda</p>
+                    <p>Ford</p>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div>
+                <div>
+                    <h3 class="fil">BUDGET</h3>
+                    <p class="grey">Choose from options below</p>
+                </div>
+                <div class="opt border" id="budget">
+                    <p>Below 1 lac</p>
+                    <p>1 - 2 lac</p>
+                    <p>2 - 3 lac</p>
+                    <p>3 - 4 lac</p>
+                    <p>4 - 5 lac</p>
+                    <p>5 lac and above</p>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div>
+                <div>
+                    <h3 class="fil">KM DRIVEN</h3>
+                    <p class="grey">Choose from options below(km)</p>
+                </div>
+                <div class="opt border" id="kilometer">
+                    <p>Below 25000km</p>
+                    <p>25000 - 50000km</p>
+                    <p>50000 - 75000km</p>
+                    <p>75000 - 100000km</p>
+                    <p>100000km and above</p>
+                </div>
+            </div>
+            <!-- <div class="hr"></div> -->
+        </div>
+        <div id="products-container">
+            <div id="sort-container">
+                <label for="sort" class="srt">SORT BY:</label>
+                <select name="sort" id="sort">
+                    <option value="relevance">Relevance</option>
+                    <option value="lth">Price:low to high</option>
+                    <option value="htl">Price:high to low</option>
+                </select>
+            </div>
+            <div class="hr"></div>
+            <div id="products">
+
+            </div>
+        </div>
+    </div>
+    <button id="btn-load">Load More</button>
+    <button id="btnback"><i class="fas fa-angle-up"></i>Back to top</button>
+    <footer id="footer">
+        <div>
+            <div id="footer1">
+                <div id="sections">
+                    <div>
+                        <h4>Popular Used Cars for Sale</h4>
+                        <ul class="grey">
+                            <li><a href="">Used Maruti Suzuki Cars For
+                                    Sale</a></li>
+                            <li><a href="">Used Hyundai Cars For Sale</a></li>
+                            <li><a href="">Used Tata Cars For Sale</a></li>
+                            <li><a href="">Used Honda Cars For Sale</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Popular Used Cars Locations</h4>
+                        <ul class="grey">
+                            <li><a href="">Used Cars
+                                    in Mumbai</a></li>
+                            <li><a href="">Used Cars
+                                    in Delhi</a></li>
+                            <li><a href="">Used
+                                    Cars in Bhopal</a></li>
+                            <li><a href="">Used
+                                    Cars in Bangalore</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Used Cars by Price</h4>
+                        <ul class="grey">
+                            <li><a href="">Used Cars Below 1 Lakh</a></li>
+                            <li><a href="">Used Cars 1 - 2 Lakhs</a></li>
+                            <li><a href="">Used Cars 2 - 3 Lakhs</a></li>
+                            <li><a href="">Used Cars Above 4 Lakhs</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>OLX</h4>
+                        <ul class="grey">
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Sitemap</a>
+                            </li>
+                            <li><a href="">Legal
+                                    Privacy information</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div><span>
+                            <h4>Follow Us</h4>
+                        </span>
+                        <div>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div><a href="">
+                                <img src="https://statics.olx.in/external/base/img/playstore.png"
+                                    alt="Android Play Store">
+                            </a><a href="">
+                                <img src="https://statics.olx.in/external/base/img/appstore.png" alt="Apple App Store">
+                            </a></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="footer2">
+            <div>
+                <div><span>Other Countries</span> Pakistan - South Africa - Indonesia</div>
+                <div><span>Free Classifieds in India</span>. © 2006-2022 OLX</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script type="module" src="./scripts/cars.js"></script>
+<script type="module">
+    import navbar from "./components/navbar.js";
+    document.querySelector("nav").innerHTML = navbar();
+
+
+</script>
+<script src="./scripts/script.js" type="module"></script>
